@@ -22,7 +22,8 @@ The file(s) MUST describe the operations an [application](#definitionsApplicatio
 ```yaml
 user/signedup:
   subscribe:
-    $ref: "#/components/messages/userSignUp"
+    message:
+      $ref: "#/components/messages/userSignUp"
 ```
 
 It means that the [application](#definitionsApplication) allows [consumers](#definitionsConsumer) to subscribe to the `user/signedup` [channel](#definitionsChannel) to receive userSignUp [messages](#definitionsMessage) produced by the application.
